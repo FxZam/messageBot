@@ -20,7 +20,8 @@
   </div>
 </form>
     
-    
+    </body>
+</html>
     
   <style>
       body {
@@ -98,5 +99,3 @@ button:hover {
 }
 
       </style>
-</body>
-</html>
