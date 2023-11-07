@@ -12,6 +12,25 @@
     <button type="submit" name="action" value="encender">ENCENDER</button>
   </div>
 </form>
+<script src="messageBot.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevenir el envío del formulario por defecto
+
+      // Coloca aquí el código que deseas ejecutar cuando se envíe el formulario
+      // En este caso, puedes llamar a la función "enviarMensajes" de "messageBot.js"
+      if (typeof enviarMensajes === 'function') {
+        enviarMensajes();
+      }
+    });
+  });
+</script>
+
+
+  
     <br><br>
     <form action="message2Bot.php" method="post">
   <div class="button-container">
